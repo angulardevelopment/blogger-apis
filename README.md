@@ -1,3 +1,9 @@
+
+api key-  AIzaSyD1EX_kMsBv52_o6k5uYb4d4DjBgMM1rcM
+ 
+https://developers.google.com/blogger/docs/3.0/using
+
+https://blogger-developers.googleblog.com/
 # Blogger
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.0.3.

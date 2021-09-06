@@ -124,5 +124,8 @@
       }
     }
   },
-  "defaultProject": "blogger"
+  "defaultProject": "blogger",
+  "cli": {
+    "analytics": false
+  }
 }
