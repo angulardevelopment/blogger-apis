@@ -7,7 +7,7 @@ declare var gapi;
   styleUrls: ['./basic.component.scss']
 })
 export class BasicComponent implements OnInit {
-  API_KEY = 'AIzaSyD1EX_kMsBv52_o6k5uYb4d4DjBgMM1rcM';
+  API_KEY = 'api key';
   constructor(private httpClient: HttpClient) { }
 
   ngOnInit(): void {
@@ -25,7 +25,7 @@ export class BasicComponent implements OnInit {
   }
 
   public getNews(){
-    const headers = new HttpHeaders({'Authorization':'Bearer ' + 'SL1ElO42nprGzA-Tg7MDlrQq'});
+    const headers = new HttpHeaders({'Authorization':'Bearer ' + 'client_secret'});
     return this.httpClient.get(`https://www.googleapis.com/blogger/v3/users/self/blogs/2399953?key=${this.API_KEY}`, {headers});
     // return this.httpClient.get(`https://www.googleapis.com/blogger/v3/blogs/3213900/posts/8398240586497962757?callback=handleResponse&key=${this.API_KEY}`);
     // https://www.googleapis.com/apiName/apiVersion/resourcePath?parameters
@@ -41,7 +41,7 @@ export class BasicComponent implements OnInit {
   //             function(err) { console.error("Error signing in", err); });
   // }
   //  loadClient() {
-  //   gapi.client.setApiKey("AIzaSyD1EX_kMsBv52_o6k5uYb4d4DjBgMM1rcM");
+  //   gapi.client.setApiKey("api key");
   //   return gapi.client.load("https://content.googleapis.com/discovery/v1/apis/blogger/v3/rest")
   //       .then(function() { console.log("GAPI client loaded for API"); },
   //             function(err) { console.error("Error loading GAPI client for API", err); });

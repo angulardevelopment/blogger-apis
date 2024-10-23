@@ -1,5 +1,5 @@
 
-api key-  AIzaSyD1EX_kMsBv52_o6k5uYb4d4DjBgMM1rcM
+
  
 https://developers.google.com/blogger/docs/3.0/using
 
