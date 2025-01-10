@@ -1,0 +1,69 @@
+    <div class="main-container">
+    
+    <div class="logout-block">
+        <a href="/">logout</a>
+    </div>
+    <div class="clr20"></div>
+    <section class="commonsection dashboardarea row">
+        <div class="card-group">
+            <div class="col-sm-12">
+                <div class="card">
+                    <div class="headline text-center">Create Product Category</div>
+                    <div class="clr20"></div>
+                    
+	
+			<!-- Fill your code here -->
+
+            <div class="card-body">
+                <form class="form" [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+                    <div class="form-group">
+                        <label>category Name</label>
+                        <input type="text" class="form-control" formControlName="category">
+                        <span class="text-danger"
+                            *ngIf="(registerFormControl.category.touched) && registerFormControl.category.errors?.required">
+                            category Name cannot be blank
+                        </span>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Image Path</label>
+                        <input type="text" class="form-control" formControlName="imageURL">
+                        <span class="text-danger"
+                            *ngIf="(registerFormControl.imageURL.touched) && registerFormControl.imageURL.errors?.required">
+                            Image URL cannot be blank
+                        </span>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Enter decription</label>
+                        <input type="text" class="form-control" formControlName="desc">
+                        <span class="text-danger"
+                            *ngIf="(registerFormControl.desc.touched) && registerFormControl.desc.errors?.required">
+                            decription cannot be blank
+                        </span>
+                    </div>
+
+                    
+                    <div class="form-group">
+                        <label>is visible</label>
+                        <input type="checkbox" class="form-control" formControlName="isVisible">
+                
+                    </div>
+                                      <div class="form-group">
+                        <button type="submit" (click)="submit = true">Create</button>
+                    </div>
+
+                    <div class="form-group">
+                        <button>cancel</button>
+                    </div>
+                </form>
+	</div>
+
+                    <div class="clr"></div>
+                </div>
+                <div class="clr"></div>
+            </div>
+        </div>
+
+</section>
+</div>

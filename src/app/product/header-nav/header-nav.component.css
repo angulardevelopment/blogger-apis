@@ -1,0 +1,13 @@
+/*! CSS Used from: http://13.250.31.161:3930/1579865875788_88331/css/furniture_rental.css */
+*{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;}
+.clr20{clear:both;display:block;width:100%;}
+.clr20{height:20px;}
+ul{padding:0;margin:0;list-style:none;}
+img{max-width:100%;}
+a,a:hover{text-decoration:none;color:#3d3d3d;}
+.navbar-sidemenu{float:left;position:fixed;height:100vh;width:220px;}
+.navbar-sidemenu li{text-transform:capitalize;padding-left:20px;}
+.navbar-sidemenu li a{padding:12px 20px;display:block;}
+.navbar-sidemenu li.active{background:#fff;border-top-right-radius:50px;border-bottom-right-radius:50px;}
+.product-logo{text-align:center;padding:15px;box-shadow:0 1px 2px #0000001c;background:#fff;margin:20px;width:200px;border-radius:4px;}
+.product-logo{float:left;padding:12px 20px;}

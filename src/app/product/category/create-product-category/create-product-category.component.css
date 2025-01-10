@@ -1,0 +1,74 @@
+/*! CSS Used from: http://13.250.31.161:3930/1579865875788_88331/css/furniture_rental.css */
+.text-center{
+    text-align:center!important;
+}
+.row{
+    margin-right:-15px;
+    margin-left:-15px;
+}
+.col-sm-12,.col-sm-6{
+    float:left;
+}
+.col-sm-12,.col-sm-6{
+    position:relative;
+    min-height:1px;
+    padding-right:15px;
+    padding-left:15px;
+}
+.col-sm-6{
+    width:50%;
+}
+.col-sm-12{
+    width:100%;
+}
+*{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;}
+.clr,.clr20{clear:both;display:block;width:100%;}
+.clr20{
+    height:20px;
+}
+ul{
+    padding:0;
+    margin:0;
+    list-style:none;
+}
+button,input,select{font-family:"Roboto",sans-serif;font-size:16px;}
+.headline{font-size:24px;font-weight:700;}
+.btn{outline:none!important;border:0;font-size:16px;padding:10px 19px;height:40px;background:transparent;overflow:hidden;position:relative;border-radius:3px;border:1px solid transparent;cursor:pointer;line-height:17px;text-transform:uppercase;box-shadow:0 2px 4px #0000003d;min-width:90px;font-weight:500;letter-spacing:.5px;}
+.btn:focus,.btn:hover{box-shadow:none;}
+.btn_primary:focus,.btn_primary:hover{color:#fff;}
+.btn_primary{background-color:#007d76;color:#fff;}
+.btn_teritory{color:#007d76;box-shadow:none;}
+.form-group{display:block;width:100%;position:relative;margin-bottom:2rem;}
+.form-control{border:0;border-bottom:2px solid #e7e7e7;border-radius:0;height:40px;box-shadow:none;outline:none;width:100%;}
+.form-control:focus{border-color:#007d76;box-shadow:none;}
+a,a:hover{text-decoration:none;color:#3d3d3d;}
+select{-moz-appearance:none;-webkit-appearance:none;background-image:url("http://13.250.31.161:3930/1579865875788_88331/images/icons/arrow.svg")!important;background-repeat:no-repeat!important;background-position:91% 9px!important;background-size:12px 23px!important;cursor:pointer;}
+.logout-block{text-align:center;padding:15px;box-shadow:0 1px 2px #0000001c;background:#fff;margin:20px;width:200px;border-radius:4px;}
+.logout-block{float:right;font-size:24px;text-transform:uppercase;margin:0;}
+.main-container{float:left;width:100%;padding:20px 35px 0 245px;}
+.commonsection{width:calc(100% - 180px);margin-top:30px;}
+.card{background:#fff;margin-bottom:20px;padding:30px 25px 20px;}
+.top-links{display:inline-block;margin-top:20px;}
+.top-links ul{display:flex;}
+.top-links ul li{color:#007d76;font-weight:500;}
+.top-links ul li a{color:#007d76;}
+.top-links ul li span{color:#3d3d3d;margin-left:10px;margin-right:7px;}
+@media (max-width: 768px){
+.btn{width:100%;margin:0 0 20px 0!important;}
+}
+.form-group input[type=text]{
+    border:none;
+    border-bottom:1px solid #727272;
+    border-radius:0;
+    box-sizing:border-box;
+    box-shadow:none;
+    padding:6px;
+    caret-color:#3AADA5;
+}
+.form-group input[type=text]:focus{border-bottom:2px solid #3AADA5;}
+.form-group select{border:none;border-bottom:1px solid #727272;background-color:#fff;padding:7px;color:#555;caret-color:#3AADA5;float:right;width:100%;}
+.form-group:after{clear:both;display:table;content:"";}
+option:hover,option:active,option:focus{color:#fff;background-color:#007D76;}
+.error {
+    color:red;
+}
