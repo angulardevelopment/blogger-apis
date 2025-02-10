@@ -12,17 +12,17 @@ export class BasicComponent implements OnInit {
   constructor(private httpClient: HttpClient) { }
 
   ngOnInit(): void {
-    console.log('asf');
+    console.log('ngOnInit');
     // this.authenticate();
     // this.loadClient();
-    gapi.load("client:auth2", function() {
-      gapi.auth2.init({client_id: "YOUR_CLIENT_ID"});
-    });
+    // gapi.load("client:auth2", function() {
+    //   gapi.auth2.init({client_id: "YOUR_CLIENT_ID"});
+    // });
 
-    this.getNews().subscribe((data)=>{
-      console.log(data, 'fdfa');
+    // this.getNews().subscribe((data)=>{
+    //   console.log(data, 'fdfa');
 
-    });
+    // });
   }
 
   public getNews(){

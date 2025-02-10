@@ -5,7 +5,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BasicComponent } from './basic/basic.component';
-import { CatalogModule } from './product/app.module';
+import { CatalogModule } from './product/catalog.module';
 
 @NgModule({
   declarations: [

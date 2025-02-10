@@ -4,7 +4,7 @@ import { CreateProductCategoryComponent } from './category/create-product-catego
 import { ViewProductCategoryComponent } from './category/view-product-category/view-product-category.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 
-
+// CatalogCreation
 const routes: Routes = [
 
   { path: 'productCategory', component: DashboardComponent,

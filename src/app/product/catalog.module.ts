@@ -1,8 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { CatalogRoutingModule } from './app-routing.module';
-import { CatalogComponent } from './app.component';
+import { CatalogRoutingModule } from './catalog-routing.module';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { HeaderNavComponent } from './header-nav/header-nav.component';
 import { ReactiveFormsModule, FormsModule } from '@angular/forms';
@@ -11,7 +10,6 @@ import { ViewProductCategoryComponent } from './category/view-product-category/v
 
 @NgModule({
   declarations: [
-    CatalogComponent,
     CreateProductCategoryComponent,
     ViewProductCategoryComponent,
     DashboardComponent,
