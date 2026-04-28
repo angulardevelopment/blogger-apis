@@ -59,7 +59,11 @@
                   "maximumError": "10kb"
                 }
               ]
-            }
+            },
+               "development": {
+          "buildOptimizer": false,
+          "sourceMap": true },
+            "defaultConfiguration": "development"
           }
         },
         "serve": {
@@ -70,6 +74,9 @@
           "configurations": {
             "production": {
               "buildTarget": "blogger:build:production"
+            },
+             "development": {
+              "buildTarget": "blogger:build:development"
             }
           }
         },

@@ -9,7 +9,7 @@ export function App() {
 }
 
 import { Router } from '@angular/router';
-import { useInjector } from './useInjector-hook.service';
+import { useInjector } from '../services/useInjector-hook.service';
 
 export function NxWelcome({ title }: { title: string }) {
   const injector = useInjector();

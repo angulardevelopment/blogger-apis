@@ -1,13 +1,17 @@
-import { HttpClient, HttpHeaders } from '@angular/common/http';
-import { Component, OnInit } from '@angular/core';
+import { HttpClient, HttpHeaders, provideHttpClient } from '@angular/common/http';
+import { Component, inject, OnInit } from '@angular/core';
+import { LogService } from '../services/log.service';
 declare var gapi;
 @Component({
   selector: 'app-basic',
   templateUrl: './basic.component.html',
   styleUrls: ['./basic.component.scss'],
-  standalone: false
+  standalone: true,
+    // providers:[LogService] // dont reprovide 
+  
 })
 export class BasicComponent implements OnInit {
+  log = inject(LogService);
   API_KEY = 'api key';
   constructor(private httpClient: HttpClient) { }
 
@@ -25,6 +29,9 @@ export class BasicComponent implements OnInit {
     // });
   }
 
+  update() {
+this.log.setCount();
+}
   public getNews(){
     const headers = new HttpHeaders({'Authorization':'Bearer ' + 'client_secret'});
     return this.httpClient.get(`https://www.googleapis.com/blogger/v3/users/self/blogs/2399953?key=${this.API_KEY}`, {headers});
